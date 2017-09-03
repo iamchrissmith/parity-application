@@ -1,0 +1,77 @@
+body {
+  background: #19181E;
+}
+
+body, input, select, textarea {
+  color: rgba(255,255,255,.7);
+  font-family: Roboto,Helvetica,sans-serif;
+  font-size: 15pt;
+  font-weight: 100;
+  line-height: 1.75;
+}
+
+#root {
+  display: flex;
+}
+
+.App {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+@media all and (min-width: 960px) {
+  .App { 
+    max-width: 800px;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .App { 
+    max-width: 960px;
+  }
+}
+
+@media all and (min-width: 1400px) {
+  .App { 
+    max-width: 1280px;
+  }
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.left, .right {
+  max-width: 45%;
+  flex: 1 50%;
+}
+
+#summary .full {
+  text-align:center;
+}
+
+.full {
+  width:100%;
+
+}
+
+.full img {
+  margin: 0 auto;
+}
+
+.full ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.full li {
+  flex: 1 1 50%;
+  align-content: center;
+}
+
