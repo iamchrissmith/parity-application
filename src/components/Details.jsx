@@ -11,8 +11,8 @@ const Details = () => {
         // "corehours" 1100 - 1700 ,
         // "travel": TravelOptions().Plentiful,
         // "remote": RemoteWorking().Negotiable,
-        // "relocationpackage": RelocationPackages().Negotiable,</p>
-  }
+        // "relocationpackage": RelocationPackages().Negotiable,
+        }</p>
       </div>
       <div className="right">
         <h2>Work Profile:</h2>
