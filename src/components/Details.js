@@ -28,7 +28,7 @@ class Details extends Component {
     return (
       <section id="details">
         <div className="left">
-          <h2>Specs:</h2>
+          <h2>Specs</h2>
           <ul>
             <li>Workload:&nbsp;
               <CountUp
@@ -74,6 +74,12 @@ class Details extends Component {
             <li>Remote: {this.props.specs.remote}</li>
             <li>Relocation Package: {this.props.specs.relocationpackage}</li>
           </ul>
+          <h2>Equipment</h2>
+          <ul>
+            <li>{this.props.equipment.operatingsystem.join(" / ")}</li>
+            <li>{this.props.equipment.computer}</li>
+            <li>Monitors: {this.props.equipment.monitors}</li>
+          </ul>
         </div>
         <div className="right">
           <div id="chart">
@@ -91,12 +97,6 @@ class Details extends Component {
               }}
             />
           </div>
-          <h2>Equipment</h2>
-          <ul>
-            <li>{this.props.equipment.operatingsystem.join(" / ")}</li>
-            <li>{this.props.equipment.computer}</li>
-            <li>Monitors: {this.props.equipment.monitors}</li>
-          </ul>
         </div>
       </section>
     )
