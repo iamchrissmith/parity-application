@@ -13,7 +13,7 @@ import MoreInfo from './components/MoreInfo';
 
 class App extends Component {
   componentDidMount() {
-    document.title = "Chris Smith - Parity.io Application"
+    document.title = "Chris Smith - Parity.io Application";
   }
   render() {
     return (

@@ -89,7 +89,7 @@ class Details extends Component {
               ref="chart" 
               data={generateData(this.props.profile)} 
               options={{
-                legend:{display:false},
+                // legend:{display:false},
                 title:{
                   display:true, 
                   text: "Work Profile"
