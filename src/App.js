@@ -18,7 +18,7 @@ class App extends Component {
         <Summary headline={job.headline} essentials={job.essentials} />
         <Map />
         <Methodology methodology={job.methodology} />
-        <Details />
+        <Details specs={job.specs} profile={job.profile} equipment={job.equipment}/>
         <Requirements />
         <MoreInfo />
       </div>

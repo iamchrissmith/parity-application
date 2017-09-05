@@ -43,6 +43,7 @@ class Summary extends Component {
               start={0}
               end={this.props.essentials.salary.amount}
               duration={3}
+              useGrouping={true}
               separator={","}
               decimals={0}
               useEasing={true}

@@ -14,6 +14,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Roboto,Helvetica,sans-serif;
 }
 
+a, a:visited, a:active, a:hover {
+  color: rgba(255,255,255,.7);
+  text-decoration: none;
+  border-bottom: 1px rgba(255,255,255,.7) dotted;
+}
+
 #root {
   display: flex;
 }
@@ -82,7 +88,7 @@ h1 {
   margin: 0 auto 2em;
 }
 
-.full ul {
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -100,4 +106,9 @@ h1 {
 #map {
   height: 300px;
   width:100%;
+}
+
+#chart {
+  width:300px;
+  height:300px;
 }

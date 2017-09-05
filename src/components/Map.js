@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import mapLogo from '../resources/mapLogo.png';
 import { withGoogleMap, GoogleMap, Marker } from "react-google-maps";
 import withScriptjs from 'react-google-maps/lib/async/withScriptjs';
@@ -37,10 +37,7 @@ const cityLatLongs = [{
     position:{lat:51.5287718, lng:-0.2416815}
   }];
 
-class Map extends Component {
-  
-  render(props) {
-
+  const Map = () => {
     return (
       <section>
         <h1 className="center">Locations</h1>
@@ -62,7 +59,6 @@ class Map extends Component {
         </div>
       </section>
     );
-  }
 }
 
 export default Map;
