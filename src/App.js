@@ -19,7 +19,7 @@ class App extends Component {
         <Map />
         <Methodology methodology={job.methodology} />
         <Details specs={job.specs} profile={job.profile} equipment={job.equipment}/>
-        <Requirements />
+        <Requirements technologies={job.technologies}/>
         <MoreInfo other={job.other} misc={job.misc} />
       </div>
     );

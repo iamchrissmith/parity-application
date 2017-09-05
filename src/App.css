@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #19181E;
 }
@@ -29,29 +33,11 @@ a, a:visited, a:active, a:hover {
   max-width: 600px;
 }
 
-@media all and (min-width: 960px) {
-  .App { 
-    max-width: 800px;
-  }
-}
-
-@media all and (min-width: 1280px) {
-  .App { 
-    max-width: 960px;
-  }
-}
-
-@media all and (min-width: 1400px) {
-  .App { 
-    max-width: 1280px;
-  }
-}
-
 section {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 4em 4em 2em;
+  margin: 4em 1em 2em;
   letter-spacing: .02em;
   font-size:17px;
 }
@@ -64,6 +50,18 @@ h1 {
   font-weight: 100;
   line-height: 1.5;
   margin:0 0 .5em;
+}
+
+.row {
+  display: flex;
+  width:100%;
+  margin: 2em 0 3em;
+}
+
+.one-third {
+  flex: 1 1 30%;
+  margin: 0 1%;
+  text-align: center;
 }
 
 .left, .right {
@@ -81,7 +79,6 @@ h1 {
 
 .full {
   width:100%;
-
 }
 
 .full img {
@@ -97,10 +94,18 @@ ul {
   align-items: stretch;
 }
 
+li {
+  flex: 1 1 100%;
+}
+
 .full li {
   flex: 1 1 50%;
   align-content: center;
   line-height:2.25;
+}
+
+#more-info .full li {
+  flex: 1 1 25%;
 }
 
 #map {
@@ -109,6 +114,18 @@ ul {
 }
 
 #chart {
-  width:300px;
-  height:300px;
+  width:350px;
+  height:350px;
+}
+
+@media all and (min-width: 960px) {
+  .App { 
+    max-width: 960px;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .App { 
+    max-width: 1280px;
+  }
 }
