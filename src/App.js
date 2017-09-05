@@ -12,6 +12,9 @@ import Requirements from './components/Requirements';
 import MoreInfo from './components/MoreInfo';
 
 class App extends Component {
+  componentDidMount() {
+    document.title = "Chris Smith - Parity.io Application"
+  }
   render() {
     return (
       <div className="App">
