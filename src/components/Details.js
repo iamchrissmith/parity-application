@@ -3,27 +3,28 @@ import CountUp from 'react-countup';
 import ReactTooltip from 'react-tooltip';
 import {Doughnut} from 'react-chartjs-2';
 
-const generateData = (profile) => {
-  return {
-    labels: Object.keys(profile),
-    datasets:[{
-      data: Object.values(profile),
-      backgroundColor: [
-        'rgba(255,190,104,0.5)',
-        'rgba(255,252,123,0.5)',
-        'rgba(185,255,181,0.5)'
-      ],
-      hoverBackgroundColor: [
-        'rgba(255,190,104,1)',
-        'rgba(255,252,123,1)',
-        'rgba(185,255,181,1)'
-      ]
-    }]
-  };
-};
-
 
 class Details extends Component {
+
+  generateData(profile){
+    return {
+      labels: Object.keys(profile),
+      datasets:[{
+        data: Object.values(profile),
+        backgroundColor: [
+          'rgba(255,190,104,0.5)',
+          'rgba(255,252,123,0.5)',
+          'rgba(185,255,181,0.5)'
+        ],
+        hoverBackgroundColor: [
+          'rgba(255,190,104,1)',
+          'rgba(255,252,123,1)',
+          'rgba(185,255,181,1)'
+        ]
+      }]
+    };
+  }
+
   render(props) {
     return (
       <section id="details">
@@ -87,9 +88,8 @@ class Details extends Component {
               width={200}
               height={200}
               ref="chart" 
-              data={generateData(this.props.profile)} 
+              data={this.generateData(this.props.profile)} 
               options={{
-                // legend:{display:false},
                 title:{
                   display:true, 
                   text: "Work Profile"
