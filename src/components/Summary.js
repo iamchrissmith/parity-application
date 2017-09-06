@@ -14,7 +14,7 @@ class Summary extends Component {
   
   stockOptions(status) {
     if (status) {
-      return " (+ Stock Options)";
+      return " (+ stock options)";
     }
   }
   
@@ -26,9 +26,9 @@ class Summary extends Component {
         <p><img src={logo} className="App-logo" alt="Parity Logo" width="187" height="150"/></p>
         <h1>{this.props.headline}</h1>
         <ul>
-          <li>Employment Type: {this.props.essentials.employment}</li>
+          <li><u>Employment Type</u>: {this.props.essentials.employment}</li>
           <li>
-            Start Date:&nbsp; 
+            <u>Start Date</u>:&nbsp; 
             <IntlProvider locale="en">
               <FormattedDate 
                 value={this.props.essentials.startdate} 
@@ -52,9 +52,9 @@ class Summary extends Component {
               redraw={true}
             />
             {this.stockOptions(this.props.essentials.salary.stockoptions)}</li>
-          <li>Industry: {this.props.essentials.industry}</li>
-          <li>Company Size: {this.props.essentials.companysize.split(/(?=[A-Z])/).join(" ")}</li>
-          <li>Team Size: {this.props.essentials.teamsize.min} - {this.props.essentials.teamsize.max}</li>
+          <li><u>Industry</u>: {this.props.essentials.industry}</li>
+          <li><u>Company Size</u>: {this.props.essentials.companysize.split(/(?=[A-Z])/).join(" ")}</li>
+          <li><u>Team Size</u>: {this.props.essentials.teamsize.min} - {this.props.essentials.teamsize.max}</li>
         </ul>
       </div>
     </section>

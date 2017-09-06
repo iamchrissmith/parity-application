@@ -56,7 +56,7 @@ const generateLineData = (rawData, subject) => {
         data:dataValues
       },
       {
-        label: 'Chris',
+        label: 'My Skills',
         fill: true,
         backgroundColor: 'rgba(75,192,192,0.4)',
         borderColor: 'rgba(75,192,192,1)',

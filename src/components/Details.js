@@ -30,7 +30,7 @@ class Details extends Component {
         <div className="left">
           <h2>Specs</h2>
           <ul>
-            <li>Workload:&nbsp;
+            <li><u>Workload</u>:&nbsp;
               <CountUp
                 start={0}
                 end={this.props.specs.workload * 100}
@@ -61,7 +61,7 @@ class Details extends Component {
                   {this.props.specs.workweek / 60 / 60} Hours
                 </ReactTooltip>
             </li>
-            <li>Holidays: <CountUp
+            <li><u>Holidays</u>: <CountUp
                 start={0}
                 end={this.props.specs.holidays}
                 duration={3}
@@ -69,16 +69,16 @@ class Details extends Component {
                 redraw={true}
               />
             </li>
-            <li>Core work hours: {this.props.specs.corehours.from} - {this.props.specs.corehours.to}</li>
-            <li>Travel: {this.props.specs.travel}</li>
-            <li>Remote: {this.props.specs.remote}</li>
-            <li>Relocation Package: {this.props.specs.relocationpackage}</li>
+            <li><u>Core work hours</u>: {this.props.specs.corehours.from} - {this.props.specs.corehours.to}</li>
+            <li><u>Travel</u>: {this.props.specs.travel}</li>
+            <li><u>Remote</u>: {this.props.specs.remote}</li>
+            <li><u>Relocation Package</u>: {this.props.specs.relocationpackage}</li>
           </ul>
           <h2>Equipment</h2>
           <ul>
             <li>{this.props.equipment.operatingsystem.join(" / ")}</li>
             <li>{this.props.equipment.computer}</li>
-            <li>Monitors: {this.props.equipment.monitors}</li>
+            <li><u>Monitors</u>: {this.props.equipment.monitors}</li>
           </ul>
         </div>
         <div className="right">
